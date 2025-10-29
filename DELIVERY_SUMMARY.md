@@ -155,16 +155,6 @@ components/footer.html → templates/footer.templ
    - Shared utility functions
    - Unified responsive behavior
 
-## 📊 Time Estimate for Full Project
-
-Based on this Order Confirmation page example:
-
-- **Simple pages** (2-3 sections): 2-3 hours each
-- **Medium pages** (4-6 sections): 4-5 hours each
-- **Complex pages** (forms, tables): 6-8 hours each
-
-**Total for 10-14 pages**: 40-70 hours of development
-
 This includes:
 - ✅ HTML/Tailwind implementation
 - ✅ Component breakdown
