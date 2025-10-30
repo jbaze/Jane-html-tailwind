@@ -1,0 +1,165 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Order Confirmation - The Starter Set</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-50 min-h-screen h-full">
+        
+        <!-- Header Component -->
+        <header id="main-header" class="bg-white sticky top-0 z-50">
+            <div class="flex items-center justify-between px-4 py-3 lg:px-24 lg:py-6">
+
+                <button id="menu-toggle" class="p-2 hover:bg-gray-100 rounded-lg transition-colors lg:hidden" aria-label="Open menu">
+                    <img src="./icons/user-round.svg">
+                </button>
+                
+                <svg width="140" height="25" viewBox="0 0 140 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_5172_59251)">
+                    <path d="M7.74 1.36993L0 1.15993V0.179932H17.39V1.59993L9.83 1.41993L2.48 23.6599H0.46L7.74 1.36993Z" fill="black"/>
+                    <path d="M13.44 3.61011H15.43L11.64 14.3701C11.38 15.0901 11.12 15.8401 10.89 16.5401C12.34 14.5001 13.75 13.2401 15.3 13.2401C16.98 13.2401 17.44 14.6601 16.62 16.7801C15.28 20.1901 14.79 22.1701 16.1 22.1701C17.41 22.1701 19.12 19.7201 19.76 18.6101L20.77 19.1501C19.04 21.9901 16.93 23.8201 15.17 23.8201C13.18 23.8201 12.69 22.0101 14.06 18.4301C15.27 15.2301 15.32 14.4301 14.73 14.4301C13.7 14.4301 12.3 16.4201 10.83 18.7601C9.74998 20.4901 9.27998 21.7801 8.57998 23.7401H6.84998L13.44 3.61011Z" fill="black"/>
+                    <path d="M19.51 20.1501C19.51 15.9201 22.37 13.3401 24.54 13.3401C26.19 13.3401 26.91 14.3201 26.91 15.5901C26.91 16.4701 26.34 17.5201 25.44 18.3801C24.23 19.5201 22.91 19.8801 21.65 20.0601H21.6C21.7 21.3501 22.37 22.1801 23.74 22.1801C25.24 22.1801 27.51 20.8901 28.8 18.6201L29.81 19.1601C28.08 21.9701 25.6 23.8301 23.15 23.8301C21.09 23.8301 19.51 22.7001 19.51 20.1701V20.1501ZM21.65 18.8901C22.63 18.7101 23.89 18.0101 24.64 17.1901C25.18 16.5701 25.7 15.7701 25.7 15.1801C25.7 14.6401 25.34 14.2801 24.8 14.2801C23.25 14.2801 21.91 16.8301 21.63 18.9001H21.66L21.65 18.8901Z" fill="black"/>
+                    <path d="M36.41 19.17L37.78 19.14C37.78 21 39.12 22.26 41.11 22.26C43.1 22.26 44.67 20.87 44.67 18.91C44.67 17.36 43.87 16.33 42.63 14.76C41.39 13.19 39.09 11.17 39.09 7.87C39.09 3.69 42.39 0 46.5 0C49.23 0 50.65 1.65 50.65 4.33C50.65 5.85 50.26 7.25 49.64 8.33L48.2 7.53C48.74 6.57 49.21 5.34 49.21 4.05C49.21 2.24 48.33 0.98 46.5 0.98C44.23 0.98 41.29 3.72 41.29 7.56C41.29 10.5 43.46 12.46 44.67 13.99C45.88 15.51 46.86 16.98 46.86 18.84C46.86 21.7 44.31 24.08 41.49 24.08C38.29 24.08 36.12 21.96 36.41 19.18V19.17Z" fill="black"/>
+                    <path d="M48.9 21.7301C48.9 20.6201 49.62 17.9401 50.76 14.3501H49.6V13.4201H51.04C51.94 10.5301 53.05 7.18012 54.21 3.62012H56.25C55.3 6.28012 54.01 10.0401 52.9 13.4201H55.45V14.3501H52.59C51.56 17.6001 50.76 20.3601 50.76 21.1601C50.76 21.7501 51.07 22.1701 51.61 22.1701C53.42 22.1701 55.4 19.7201 56.05 18.6101L57.06 19.1501C55.33 21.9901 53.22 23.8201 51.1 23.8201C49.81 23.8201 48.91 22.9401 48.91 21.7301H48.9Z" fill="black"/>
+                    <path d="M61.55 21.8001C60.67 23.1701 59.59 23.8101 58.63 23.8101C56.8 23.8101 55.66 22.3701 55.66 20.3001C55.66 17.1301 57.83 13.3301 60.87 13.3301C62.19 13.3301 63.04 14.2601 63.24 15.6301L63.89 13.4101H65.8C65.62 13.9301 64.79 15.9601 63.94 18.5701C63.5 19.9101 63.32 20.6901 63.32 21.1501C63.32 21.7401 63.71 22.1601 64.25 22.1601C65.41 22.1601 67.14 19.7101 67.79 18.6001L68.8 19.1401C67.07 21.9801 65.45 23.8101 63.97 23.8101C62.49 23.8101 61.57 22.9601 61.54 21.8001H61.55ZM59.1 22.1601C60.98 22.1601 62.38 18.4201 62.38 16.4301C62.38 15.3701 62.04 14.2601 61.04 14.2601C59.05 14.2601 57.66 18.2101 57.66 20.1701C57.66 21.2801 58.2 22.1601 59.11 22.1601H59.1Z" fill="black"/>
+                    <path d="M71.2 21.47C71.2 20.05 71.74 18.43 73.19 14.92C72.29 14.89 71.36 14.74 70.69 14.43C70.43 15.93 69.76 17.55 68.96 18.92C68.47 19.77 67.85 20.34 67.21 20.78L66.72 20.34C67.21 19.72 67.55 19.05 68.04 18.1C68.94 16.32 69.12 14.51 69.12 12.91L71.06 12.47C71.76 13.58 73.43 13.94 74.8 13.94C75.21 13.94 75.47 13.94 75.7 13.91C74.2 17.39 73.2 20 73.2 21.03C73.2 21.75 73.64 22.16 74.18 22.16C75.34 22.16 77.07 19.71 77.72 18.6L78.73 19.14C77 21.98 75.4 23.81 73.8 23.81C72.33 23.81 71.22 22.83 71.22 21.46L71.2 21.47Z" fill="black"/>
+                    <path d="M77.08 21.7301C77.08 20.6201 77.8 17.9401 78.94 14.3501H77.78V13.4201H79.22C80.12 10.5301 81.23 7.18012 82.39 3.62012H84.43C83.48 6.28012 82.19 10.0401 81.08 13.4201H83.63V14.3501H80.77C79.74 17.6001 78.94 20.3601 78.94 21.1601C78.94 21.7501 79.25 22.1701 79.79 22.1701C81.6 22.1701 83.58 19.7201 84.23 18.6101L85.24 19.1501C83.51 21.9901 81.4 23.8201 79.28 23.8201C77.99 23.8201 77.09 22.9401 77.09 21.7301H77.08Z" fill="black"/>
+                    <path d="M83.97 20.1501C83.97 15.9201 86.83 13.3401 89 13.3401C90.65 13.3401 91.37 14.3201 91.37 15.5901C91.37 16.4701 90.8 17.5201 89.9 18.3801C88.69 19.5201 87.37 19.8801 86.11 20.0601H86.06C86.16 21.3501 86.83 22.1801 88.2 22.1801C89.7 22.1801 91.97 20.8901 93.26 18.6201L94.27 19.1601C92.54 21.9701 90.06 23.8301 87.61 23.8301C85.55 23.8301 83.97 22.7001 83.97 20.1701V20.1501ZM86.11 18.8901C87.09 18.7101 88.35 18.0101 89.1 17.1901C89.64 16.5701 90.16 15.7701 90.16 15.1801C90.16 14.6401 89.8 14.2801 89.26 14.2801C87.71 14.2801 86.37 16.8301 86.09 18.9001H86.12L86.11 18.8901Z" fill="black"/>
+                    <path d="M96.67 21.47C96.67 20.05 97.21 18.43 98.66 14.92C97.76 14.89 96.83 14.74 96.16 14.43C95.9 15.93 95.23 17.55 94.43 18.92C93.94 19.77 93.32 20.34 92.68 20.78L92.19 20.34C92.68 19.72 93.02 19.05 93.51 18.1C94.41 16.32 94.59 14.51 94.59 12.91L96.53 12.47C97.23 13.58 98.9 13.94 100.27 13.94C100.68 13.94 100.94 13.94 101.17 13.91C99.67 17.39 98.67 20 98.67 21.03C98.67 21.75 99.11 22.16 99.65 22.16C100.81 22.16 102.54 19.71 103.19 18.6L104.2 19.14C102.47 21.98 100.87 23.81 99.27 23.81C97.8 23.81 96.69 22.83 96.69 21.46L96.67 21.47Z" fill="black"/>
+                    <path d="M110.79 19.17L112.16 19.14C112.16 21 113.5 22.26 115.49 22.26C117.48 22.26 119.05 20.87 119.05 18.91C119.05 17.36 118.25 16.33 117.01 14.76C115.77 13.19 113.47 11.17 113.47 7.87C113.47 3.69 116.77 0 120.88 0C123.61 0 125.03 1.65 125.03 4.33C125.03 5.85 124.64 7.25 124.02 8.33L122.58 7.53C123.12 6.57 123.59 5.34 123.59 4.05C123.59 2.24 122.71 0.98 120.88 0.98C118.61 0.98 115.67 3.72 115.67 7.56C115.67 10.5 117.84 12.46 119.05 13.99C120.26 15.51 121.24 16.98 121.24 18.84C121.24 21.7 118.69 24.08 115.87 24.08C112.67 24.08 110.5 21.96 110.79 19.18V19.17Z" fill="black"/>
+                    <path d="M123.12 20.1501C123.12 15.9201 125.98 13.3401 128.15 13.3401C129.8 13.3401 130.52 14.3201 130.52 15.5901C130.52 16.4701 129.95 17.5201 129.05 18.3801C127.84 19.5201 126.52 19.8801 125.26 20.0601H125.21C125.31 21.3501 125.98 22.1801 127.35 22.1801C128.85 22.1801 131.12 20.8901 132.41 18.6201L133.42 19.1601C131.69 21.9701 129.21 23.8301 126.76 23.8301C124.7 23.8301 123.12 22.7001 123.12 20.1701V20.1501ZM125.26 18.8901C126.24 18.7101 127.5 18.0101 128.25 17.1901C128.79 16.5701 129.31 15.7701 129.31 15.1801C129.31 14.6401 128.95 14.2801 128.41 14.2801C126.86 14.2801 125.52 16.8301 125.24 18.9001H125.27L125.26 18.8901Z" fill="black"/>
+                    <path d="M131.79 21.7301C131.79 20.6201 132.51 17.9401 133.65 14.3501H132.49V13.4201H133.93C134.83 10.5301 135.94 7.18012 137.1 3.62012H139.14C138.19 6.28012 136.9 10.0401 135.79 13.4201H138.34V14.3501H135.48C134.45 17.6001 133.65 20.3601 133.65 21.1601C133.65 21.7501 133.96 22.1701 134.5 22.1701C136.31 22.1701 138.29 19.7201 138.94 18.6101L139.95 19.1501C138.22 21.9901 136.11 23.8201 133.99 23.8201C132.7 23.8201 131.8 22.9401 131.8 21.7301H131.79Z" fill="black"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_5172_59251">
+                    <rect width="139.95" height="24.07" fill="white"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+
+
+                <nav class="hidden lg:flex lg:justify-end lg:space-x-16 lg:flex-grow pr-6">
+                    <a href="#" class="text-gray-700 hover: transition-colors text-lg font-medium">Home</a>
+                    <a href="#" class="text-gray-700 hover: transition-colors text-lg font-medium">About</a>
+                    <a href="#" class="text-gray-700 hover: transition-colors text-lg font-medium">Blog</a>
+                    <a href="#" class="text-gray-700 hover: transition-colors text-lg font-medium">Contact Us</a>
+                </nav>
+                            
+                <button id="sign-in-button" class="hidden lg:block bg-black text-white px-5 py-2 rounded-md hover:bg-gray-800 transition-colors shadow-lg">
+                    Sign in
+                </button>
+
+                <button id="user-menu-toggle" class="p-2 hover:bg-gray-100 rounded-lg transition-colors lg:hidden" aria-label="User menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <div class="w-full bg-white p-6 md:py-10 md:px-14 shadow-lg rounded-xl main-content-height flex justify-center">
+            <div class="max-w-xl">
+                <div class="w-full bg-white p-5 sm:p-5 space-y-6">
+                    <header class="text-center space-y-3">
+                        <h1 class="text-2xl font-bold  mb-8 leading-snug font-[Archivo,sans-serif]">
+                            Ready for Your Results? Set Up Your Account
+                        </h1>
+                        <p class="text-sm text-left font-[Montserrat,sans-serif]">
+                            Please enter your email so we can send you your personalized baby registry recommendations. Don’t worry—we’ll only use it to share your custom results and helpful updates.
+                        </p>
+                    </header>
+
+                    <form class="space-y-6">
+                        <div>
+                            <label for="email" class="block font-semibold text-[16px] mb-2">Email.</label>
+                            <input type="email" id="email" name="email" placeholder="Superman@gmail.com" required
+                                class="w-full px-4 py-3 border border-black rounded-lg focus:ring-green-500 focus:border-green-500 text-base shadow-sm placeholder-gray-500 placeholder:text-xl placeholder:font-light placeholder:text-black font-[Montserrat,sans-serif]">
+                        </div>
+
+                        <p for="terms" class="m-0 text-[10px] text-gray-600 text-center cursor-pointer">
+                            By creating an account, you agree to the terms below
+                        </p>
+
+                        <div class="flex items-start mt-6">
+                            <input id="terms" type="checkbox" checked
+                                class="h-5 w-5 mr-4 rounded custom-checkbox cursor-pointer mt-0.5">
+                            <label for="terms" class="ml-3 text-sm  cursor-pointer">
+                                Agree with our terms & Conditions
+                            </label>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <input id="marketing" type="checkbox" checked
+                                class="h-5 w-5 mr-4 rounded custom-checkbox cursor-pointer mt-0.5">
+                            <label for="marketing" class="ml-3 text-sm  cursor-pointer">
+                                You agree to receive marketing email from TheStarterSet.com
+                            </label>
+                        </div>
+
+                        <div class="pt-4 flex justify-between space-x-4">
+                            <button type="button"
+                                class="w-full py-1 px-4 rounded-lg btn-purple transition-colors">
+                                Back
+                            </button>
+                            <button type="submit"
+                                class="w-full py-1 px-4 rounded-lg btn-green transition-colors">
+                                Create Account
+                            </button>
+                        </div>
+                    </form>
+
+                    <div class="space-y-6">
+                        <div class="relative flex justify-center items-center py-4">
+                            <div class="absolute w-full border-t border-gray-300"></div>
+                            <span class="relative bg-white px-3 text-sm font-normal">
+                                Or Register with
+                            </span>
+                        </div>
+
+                        <div class="flex justify-between space-x-3">
+                            <button class="w-full flex justify-center items-center border border-gray-300 rounded-lg">
+                                <img class=" h-[56px]" src="./icons/fb.png">
+                            </button>
+
+                            <button class="w-full flex justify-center items-center border border-gray-300 rounded-lg">
+                                <img class="h-[56px]" src="./icons/google.png">
+                            </button>
+
+                            <button class="w-full flex justify-center items-center border border-gray-300 rounded-lg">
+                                <img class="h-[56px]" src="./icons/apple.png">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Component -->
+        <footer id="main-footer" class="bg-gray-50 border-t border-gray-200 mt-auto">
+            <div class="mx-auto px-4 py-6">
+                <!-- Footer Links -->
+                <nav class="flex justify-center space-x-8 mb-4 border-b border-gray-150 pb-4">
+                    <a href="#" class="text-sm text-gray-600 hover: transition-colors font-medium">Sign Up</a>
+                    <a href="#" class="text-sm text-gray-600 hover: transition-colors font-medium">About us</a>
+                    <a href="#" class="text-sm text-gray-600 hover: transition-colors font-medium">Contacts</a>
+                </nav>
+                
+                <!-- Contact Email -->
+                <div class="flex items-center justify-center text-sm">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                    <a href="mailto:info@Questions.com" class="hover: transition-colors text-black-600 font-semibold">info@Questions.com</a>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+    </html>
