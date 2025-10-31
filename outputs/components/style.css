@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html, body {
+    width: 100%;
+}
+
 .btn-green {
     background-color: #b5e4ca;
     color: #000000;
@@ -51,6 +55,33 @@ input[type='checkbox'].custom-checkbox:checked {
 /* Optional: To ensure the label is also clickable */
 .custom-checkbox-wrapper label {
     cursor: pointer;
+}
+
+.liked-products-btn {
+    background-color: #a0b5a7;
+    border-radius: 25px;
+    height: 20px;
+}
+
+.filter-btn-active {
+    background-color: #8d9191; 
+    color: white;
+}
+
+.filter-btn-inactive {
+    color: #7f7f7f; 
+    font-weight: 500;
+}
+
+.select-btn {
+    background-color: #8d9191 !important; 
+    color: white;
+    height: 39px;
+}
+
+.apply-filter-btn {
+    background-color: #8d9191; 
+    color: white;
 }
 
 @media (max-width: 1024px) {

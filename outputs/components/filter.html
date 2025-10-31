@@ -1,0 +1,115 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Order Confirmation - The Starter Set</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-50 min-h-screen h-full">
+        <div class="w-full bg-white pt-6 pl-6 pr-6 md:pt-10 md:px-14 shadow-lg rounded-xl h-full min-h-[100vh] flex justify-center">
+            <div class="w-full max-w-xl">
+                <header class="flex justify-between items-center mb-8">
+                    <h1 class="font-bold text-[24px] font-[Montserrat,sans-serif]">Filter</h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </header>
+
+                <!-- Essentials & Options Section -->
+                <div class="mb-8">
+                    <h2 class="text-lg mb-5 font-[Archivo,sans-serif]">Essentials & Options</h2>
+                    <div id="options-group" class="flex flex-wrap justify-between gap-x-16 gap-y-3 font-[Archivo,sans-serif]">
+                        <!-- Note: Buttons now include the base classes and the onclick event -->
+                        <button onclick="handleSelection(this, 'options-group')" class="px-4 py-2 rounded-lg filter-btn-inactive" data-value="Need">Need</button>
+                        <button onclick="handleSelection(this, 'options-group')" class="px-4 py-2 rounded-lg filter-btn-active" data-value="Maybe">Maybe</button>
+                        <button onclick="handleSelection(this, 'options-group')" class="px-4 py-2 rounded-lg filter-btn-inactive" data-value="DontNeed">Don't Need</button>
+                    </div>
+                </div>
+
+                <!-- Category Section -->
+                <div class="mb-8">
+                    <h2 class="text-lg mb-3 font-[Archivo,sans-serif]">Category</h2>
+                    <div id="category-group" class="flex flex-wrap justify-between gap-x-16 gap-y-3 font-[Archivo,sans-serif]">
+                        <button onclick="handleSelection(this, 'category-group')" class="px-6 py-2 rounded-lg filter-btn-active" data-value="Bathing">Bathing</button>
+                        <button onclick="handleSelection(this, 'category-group')" class="px-6 py-2 rounded-lg filter-btn-inactive" data-value="ChangingDiapers">Changing Diapers</button>
+                        <button onclick="handleSelection(this, 'category-group')" class="px-6 py-2 rounded-lg filter-btn-inactive" data-value="Towels">Towels</button>
+                        <button onclick="handleSelection(this, 'category-group')" class="px-6 py-2 rounded-lg filter-btn-inactive" data-value="Clothing">Clothing</button>
+                        <button onclick="handleSelection(this, 'category-group')" class="px-6 py-2 rounded-lg filter-btn-inactive" data-value="Feeding">Feeding</button>
+                        <button onclick="handleSelection(this, 'category-group')" class="px-6 py-2 rounded-lg filter-btn-inactive" data-value="Grooming">Grooming</button>
+                        <button onclick="handleSelection(this, 'category-group')" class="px-6 py-2 rounded-lg filter-btn-inactive" data-value="Health">Health</button>
+                        <button onclick="handleSelection(this, 'category-group')" class="px-6 py-2 rounded-lg filter-btn-inactive" data-value="Sleeping">Sleeping</button>
+                        <button onclick="handleSelection(this, 'category-group')" class="px-6 py-2 rounded-lg filter-btn-inactive" data-value="Playing">Playing</button>
+                    </div>
+                </div>
+
+                <!-- ArchivovArchivo Section (Dropdown) -->
+                <div class="mb-8">
+                    <h2 class="text-lg mb-3 font-[Archivo,sans-serif]">ArchivovArchivo</h2>
+                    <div class="relative inline-block w-full">
+                        <select class="block font-[Archivo,sans-serif] appearance-none w-[98px] bg-gray-500 border border-gray-500 text-white py-2 px-4 pr-8 rounded-lg leading-tight focus:outline-none focus:bg-gray-600 focus:border-gray-700 select-btn">
+                            <option>Select</option>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-white">
+                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 6.757 7.586 5.343 9l4.95 4.95z"/></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sort By Section -->
+                <div class="mb-8">
+                    <h2 class="text-lg mb-3 font-[Archivo,sans-serif]">Sort By</h2>
+                    <div id="sort-group" class="flex flex-wrap justify-between gap-x-20 gap-y-3 font-[Archivo,sans-serif]">
+                        <button onclick="handleSelection(this, 'sort-group')" class="px-4 py-2 rounded-lg filter-btn-active" data-value="Favorites">Favorites</button>
+                        <button onclick="handleSelection(this, 'sort-group')" class="px-4 py-2 rounded-lg filter-btn-inactive" data-value="Popularity">Popularity</button>
+                        <button onclick="handleSelection(this, 'sort-group')" class="px-4 py-2 rounded-lg filter-btn-inactive" data-value="Newest">Newest</button>
+                        <button onclick="handleSelection(this, 'sort-group')" class="px-4 py-2 rounded-lg filter-btn-inactive" data-value="Oldest">Oldest</button>
+                        <button onclick="handleSelection(this, 'sort-group')" class="px-4 py-2 rounded-lg filter-btn-inactive" data-value="HighPrice">High Price</button>
+                        <button onclick="handleSelection(this, 'sort-group')" class="px-4 py-2 rounded-lg filter-btn-inactive" data-value="LowPrice">Low Price</button>
+                        <button onclick="handleSelection(this, 'sort-group')" class="px-4 py-2 rounded-lg filter-btn-inactive" data-value="Review">Review</button>
+                    </div>
+                </div>
+
+                <!-- Price Range Section -->
+                <div class="mb-8">
+                    <h2 class="text-lg mb-3 font-[Archivo,sans-serif]">Price Range</h2>
+                    <div class="flex gap-4 flex-wrap">
+                        <input type="text" placeholder="Min Price" class="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <input type="text" placeholder="Max Price" class="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                </div>
+
+                <div class="bg-white mb-3">
+                    <button class="w-full py-3 rounded-lg text-white font-semibold apply-filter-btn font-[Archivo,sans-serif]">
+                        Apply Filter
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+        // Handles single selection logic for a group of filter buttons.
+        function handleSelection(clickedButton, groupId) {
+            const parentGroup = document.getElementById(groupId);
+            if (!parentGroup) return; 
+
+            const buttons = parentGroup.querySelectorAll('button');
+            buttons.forEach(button => {
+                button.classList.remove('filter-btn-active');
+                button.classList.add('filter-btn-inactive');
+            });
+
+            clickedButton.classList.remove('filter-btn-inactive');
+            clickedButton.classList.add('filter-btn-active');
+            }
+        </script>
+
+    </body>
+    </html>
