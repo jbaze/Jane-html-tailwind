@@ -66,118 +66,122 @@
         </header>
 
         <div class="w-full bg-white p-6 md:py-10 md:px-14 shadow-lg rounded-xl main-content-height flex justify-center">
-            <div class="max-w-xl">
-                <header class="flex justify-between items-center p-4">
+            <div class="w-full">
+                <header class="flex justify-between items-center py-4 md:pb-0">
                     <a href="#" class="text-2xl text-gray-700">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
                         </svg>
                     </a>
-                    <h1 class="text-lg font-semibold">Checkout</h1>
+                    <h1 class="text-lg font-semibold block md:hidden">Checkout</h1>
                 </header>
-
-                <main class="pb-4 pl-4 pr-4 pt-0 space-y-6 mx-auto">
-
-                    <div class="flex items-start space-x-4 border border-gray-200 p-1 rounded-xl">
+                <h1 class="text-[48px] text-center mt-0 mb-8 font-semibold hidden md:block">Checkout</h1>
+                <main class="pt-0 mx-auto">
+                <form class="lg:flex lg:gap-6 lg:gap-x-24">
+                    <!-- Left Column -->
+                    <div class="lg:w-1/2 space-y-6">
+                    <!-- Product/Quantity -->
+                    <div class="flex items-start space-x-4 border border-gray-200 p-1 rounded-xl lg:mb-9">
                         <div class="w-24 h-24 bg-gray-200 rounded-lg flex items-center justify-center">
-                            <img src="icons/woman-child.png">
+                        <img src="icons/woman-child.png">
                         </div>
                         <div class="flex-1 flex flex-col justify-between h-24">
-                            <h2 class="text-lg font-medium text-gray-800">Baby gear List</h2>
-                            <div class="flex justify-between items-end mt-auto pb-2 pr-2">
-                                <span class="text-sm text-gray-500">Qty: 1</span>
-                                <span class="text-lg font-semibold text-gray-800">$100.00</span>
+                        <h2 class="text-lg font-medium text-gray-800">Baby gear List</h2>
+                        <div class="flex justify-between items-end mt-auto pb-2 pr-2">
+                            <span class="text-sm text-gray-500">Qty: 1</span>
+                            <span class="text-lg font-semibold text-gray-800">$100.00</span>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div>
+                        <label for="email" class="block font-medium text-gray-700 mb-1 lg:text-[24px] lg:font-light lg-mb-4">Email</label>
+                        <input type="email" id="email" value="Superman@gmail.com" class="w-full px-4 py-3 border border-gray-200 rounded-lg text-base shadow-sm placeholder-gray-500 placeholder:text-sm placeholder:font-light placeholder:text-black font-[Montserrat,sans-serif]">
+                    </div>
+
+                    <!-- Cardholder Name -->
+                    <div>
+                        <label for="cardholder-name" class="block font-medium text-gray-700 mb-1 lg:text-[24px] lg:font-light lg-mb-4">Cardholder name</label>
+                        <input type="text" id="cardholder-name" value="Super Man" class="px-4 py-3 mt-1 block w-full input-field border border-gray-200 rounded-lg text-base shadow-sm placeholder-gray-500 placeholder:text-sm placeholder:font-light placeholder:text-black font-[Montserrat,sans-serif]">
+                    </div>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="lg:w-1/2 space-y-6 mt-6 lg:mt-0">
+                    <!-- Card Information -->
+                    <div>
+                        <label class="block font-medium text-gray-700 mb-1 lg:text-[24px] lg:font-light lg-mb-4">Card information</label>
+                        <div class="overflow-hidden relative w-full border border-gray-200 rounded-tl-lg rounded-tr-lg lg:rounded-lg text-base shadow-sm placeholder-gray-500 placeholder:text-sm placeholder:font-light placeholder:text-black font-[Montserrat,sans-serif]">
+                            <input type="text" value="4444 5555 1234 1234" class="px-4 py-3 w-full input-field pr-24 focus:border-black focus:ring-black">
+                            <div class="absolute inset-y-0 right-0 flex items-center pr-2">
+                                <span class="text-xs text-gray-400 flex space-x-1">
+                                    <img src="icons/visa.png">
+                                    <img src="icons/master.png">
+                                    <img src="icons/am.png">
+                                    <img src="icons/jcb.png">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex space-x-3 w-full pb-3 pt-2 lg:mt-6 lg:pb-0 lg:pt-0">
+                            <div class="overflow-hidden border border-gray-200 rounded-bl-lg lg:rounded-lg text-base shadow-sm placeholder-gray-500 placeholder:text-sm placeholder:font-light placeholder:text-black font-[Montserrat,sans-serif]">
+                                <input type="text" value="09 / 2000" placeholder="MM / YYYY" class="px-4 py-3 flex-1 input-field focus:border-black focus:ring-black">
+                            </div>
+                            <div class="overflow-hidden relative border flex flex-1 rounded-br-lg lg:rounded-lg text-base shadow-sm placeholder-gray-500 placeholder:text-sm placeholder:font-light placeholder:text-black font-[Montserrat,sans-serif]">
+                                <input type="text" value="111" placeholder="CVV" class="px-4 py-3 w-full input-field pr-8 focus:border-black focus:ring-black">
+                                <img class="absolute right-3 top-3 h-[15px] mt-1 ml-2" src="icons/card.png">
+                                <span class="absolute right-3 top-3 bg-gray-900 text-white text-[7px] w-[14px] h-[14px] flex justify-center items-center rounded-xl">135</span>
                             </div>
                         </div>
                     </div>
 
-                    <form class="space-y-4">
-                        <div>
-                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                            <input type="email" id="email" value="Superman@gmail.com"
-                                class="w-full px-4 py-3 border border-gray-200 rounded-lg  text-base shadow-sm placeholder-gray-500 placeholder:text-sm placeholder:font-light placeholder:text-black font-[Montserrat,sans-serif]">
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-1">Card information</label>
-                            
-                            <div class="overflow-hidden relative w-full border border-gray-200 rounded-tl-lg rounded-tr-lg  text-base shadow-sm placeholder-gray-500 placeholder:text-sm placeholder:font-light placeholder:text-black font-[Montserrat,sans-serif]">
-                                <input type="text" value="4444 5555 1234 1234"
-                                    class="px-4 py-3 w-full input-field pr-24 focus:border-black focus:ring-black">
-                                <div class="absolute inset-y-0 right-0 flex items-center pr-2">
-                                    <span class="text-xs text-gray-400 flex space-x-1">
-                                        <img src="icons/visa.png">
-                                        <img src="icons/master.png">
-                                        <img src="icons/am.png">
-                                        <img src="icons/jcb.png">
-                                    </span>
-                                </div>
-                            </div>
-
-                            <div class="flex space-x-3 w-full pb-3 pt-2">
-                                <div class="overflow-hidden border border-gray-200 rounded-bl-lg  text-base shadow-sm placeholder-gray-500 placeholder:text-sm placeholder:font-light placeholder:text-black font-[Montserrat,sans-serif]">
-                                    <input type="text" value="09 / 2000" placeholder="MM / YYYY"
-                                    class="px-4 py-3 flex-1 input-field focus:border-black focus:ring-black">
-                                </div>
-
-                                <div class="overflow-hidden relative border flex flex-1 rounded-br-lg  text-base shadow-sm placeholder-gray-500 placeholder:text-sm placeholder:font-light placeholder:text-black font-[Montserrat,sans-serif]">
-                                    <input type="text" value="111" placeholder="CVV"
-                                        class="px-4 py-3 w-full input-field pr-8 focus:border-black focus:ring-black">
-                                    <img class="absolute right-3 top-3 h-[15px] mt-1 ml-2" src="icons/card.png">
-                                    <span class="absolute right-3 top-3 bg-gray-900 text-white text-[7px] w-[14px] h-[14px] flex justify-center items-center rounded-xl">135</span>
-                                </div>
+                    <!-- Country -->
+                    <div>
+                        <label for="country" class="block font-medium text-gray-700 mb-1 lg:text-[24px] lg:font-light lg-mb-4">Country or region</label>
+                        <div class="relative">
+                        <div class="relative w-full">
+                            <select id="country" class="px-4 py-3 block w-full input-field border border-gray-200 rounded-tl-lg rounded-tr-lg lg:rounded-lg text-base shadow-sm placeholder-gray-500 placeholder:text-sm placeholder:font-light placeholder:text-black font-[Montserrat,sans-serif] appearance-none">
+                                <option>United States</option>
+                                <option>Canada</option>
+                                <option>Mexico</option>
+                            </select>
+                            <!-- Custom arrow -->
+                            <div class="pointer-events-none absolute inset-y-0 right-4 flex items-center">
+                                <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
                             </div>
                         </div>
-
-                        <div>
-                            <label for="cardholder-name" class="block text-sm font-medium text-gray-700 mb-1">Cardholder name</label>
-                            <input type="text" id="cardholder-name" value="Super Man"
-                                class="px-4 py-3 mt-1 block w-full input-field border border-gray-200 rounded-lg  text-base shadow-sm placeholder-gray-500 placeholder:text-sm placeholder:font-light placeholder:text-black font-[Montserrat,sans-serif]">
                         </div>
+                        <input type="text" value="98801" placeholder="Zip / Postal Code" class="px-4 py-3 block w-full input-field border-b border-l border-r lg:border border-gray-200 rounded-br-lg rounded-bl-lg lg:rounded-lg text-base shadow-sm placeholder-gray-500 placeholder:text-sm placeholder:font-light placeholder:text-black font-[Montserrat,sans-serif] mt-0 lg:mt-6">
+                    </div>
+                    </div>
+                </form>
 
-                        <div>
-                            <label for="country" class="block text-sm font-medium text-gray-700 mb-1">Country or region</label>
-                            
-                            <div class="relative">
-                                <select id="country" class="px-4 py-3 mt-1 block w-full input-field border border-gray-200 rounded-tl-lg rounded-tr-lg  text-base shadow-sm placeholder-gray-500 placeholder:text-sm placeholder:font-light placeholder:text-black font-[Montserrat,sans-serif]">
-                                    <option>United States</option>
-                                    <option>Canada</option>
-                                    <option>Mexico</option>
-                                </select>
-                            </div>
-
-                            <input type="text" value="98801" placeholder="Zip / Postal Code"
-                                class="px-4 py-3 block w-full input-field border-b border-l border-r border-gray-200 rounded-br-lg rounded-bl-lg  text-base shadow-sm placeholder-gray-500 placeholder:text-sm placeholder:font-light placeholder:text-black font-[Montserrat,sans-serif] mt-0">
-                        </div>
-
-                        <div class="pt-4">
-                            <button type="submit"
-                                    class="w-full py-1 px-4 btn-green rounded-xl hover:bg-green-400 transition duration-150 shadow-md">
-                                Pay
-                            </button>
-
-                            <p class="text-center text-[16px] text-gray-500 mt-8">By clicking Pay, you agree to the Link Terms and Privacy Policy.</p>
-                        </div>
-                    </form>
+                <!-- Submit Button (Full Width Below Columns) -->
+                <div class="pt-10 flex-col flex justify-center">
+                    <button type="submit" class="w-full py-1 px-4 btn-green rounded-lg hover:bg-green-400 transition duration-150 shadow-md lg:w-1/3 mx-auto">
+                    Pay
+                    </button>
+                    <p class="text-center text-[16px] text-gray-500 mt-8">By clicking Pay, you agree to the Link Terms and Privacy Policy.</p>
+                </div>
                 </main>
             </div>
         </div>
 
         <!-- Footer Component -->
-        <footer id="main-footer" class="bg-gray-50 border-t border-gray-200 mt-auto">
-            <div class="mx-auto px-4 py-6">
+        <footer id="main-footer" class="pl-6 pr-6 pb-6 md:pt-10 md:px-14 bg-white mt-auto">
+            <div class="mx-auto py-6 px-6 bg-gray-50 mt-auto rounded-xl">
                 <!-- Footer Links -->
                 <nav class="flex justify-center space-x-8 mb-4 border-b border-gray-150 pb-4">
-                    <a href="#" class="text-sm text-gray-600 hover: transition-colors font-medium">Sign Up</a>
-                    <a href="#" class="text-sm text-gray-600 hover: transition-colors font-medium">About us</a>
-                    <a href="#" class="text-sm text-gray-600 hover: transition-colors font-medium">Contacts</a>
+                    <a href="#" class="text-sm text-gray-800 hover: transition-colors font-medium">Sign Up</a>
+                    <a href="#" class="text-sm text-gray-800 hover: transition-colors font-medium">About us</a>
+                    <a href="#" class="text-sm text-gray-800 hover: transition-colors font-medium">Contacts</a>
                 </nav>
                 
                 <!-- Contact Email -->
                 <div class="flex items-center justify-center text-sm">
-                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                    </svg>
+                    <img src="./icons/envelope.png" class="mr-2">
                     <a href="mailto:info@Questions.com" class="hover: transition-colors text-black-600 font-semibold">info@Questions.com</a>
                 </div>
             </div>

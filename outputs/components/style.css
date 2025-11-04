@@ -26,7 +26,11 @@ body {
 
 /* Main content height adjustment */
 .main-content-height {
-    min-height: calc(100vh - 210px);
+    min-height: calc(100vh - 273px);
+}
+
+#country {
+  padding-right: 2.5rem; /* adjust until arrow moves 10px left */
 }
 
 input[type='checkbox'].custom-checkbox {
@@ -59,8 +63,6 @@ input[type='checkbox'].custom-checkbox:checked {
 
 .liked-products-btn {
     background-color: #a0b5a7;
-    border-radius: 25px;
-    height: 20px;
 }
 
 .filter-btn-active {
@@ -101,5 +103,9 @@ input[type='checkbox'].custom-checkbox:checked {
 @media (min-width: 1024px) {
     .btn-green, .btn-purple {
         font-size: 24px;
+    }
+
+    .liked-products-btn {
+       background-color: #B5E4CA; 
     }
 }
