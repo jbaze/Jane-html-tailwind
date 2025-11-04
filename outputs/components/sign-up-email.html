@@ -65,51 +65,53 @@
         </header>
 
         <div class="w-full bg-white p-6 md:py-10 md:px-14 shadow-lg rounded-xl main-content-height flex justify-center">
-            <div class="max-w-xl">
-                <div class="w-full bg-white p-5 sm:p-5 space-y-6">
-                    <header class="text-center space-y-3">
-                        <h1 class="text-2xl font-bold  mb-8 leading-snug font-[Archivo,sans-serif]">
+            <div class="w-full">
+                <div class="w-full bg-white space-y-6">
+                    <header class="text-center space-y-3 lg:w-2/3 mx-auto">
+                        <h1 class="text-[22px] lg:text-[48px] font-bold lg:font-medium mb-8 leading-snug font-[Archivo,sans-serif]">
                             Ready for Your Results? Set Up Your Account
                         </h1>
-                        <p class="text-sm text-left font-[Montserrat,sans-serif]">
+                        <p class="text-[14px] lg:text-[24px] text-left lg:text-center font-[Montserrat,sans-serif]">
                             Please enter your email so we can send you your personalized baby registry recommendations. Don’t worry—we’ll only use it to share your custom results and helpful updates.
                         </p>
                     </header>
 
                     <form class="space-y-6">
-                        <div>
-                            <label for="email" class="block font-semibold text-[16px] mb-2">Email.</label>
-                            <input type="email" id="email" name="email" placeholder="Superman@gmail.com" required
-                                class="w-full px-4 py-3 border border-black rounded-lg focus:ring-green-500 focus:border-green-500 text-base shadow-sm placeholder-gray-500 placeholder:text-xl placeholder:font-light placeholder:text-black font-[Montserrat,sans-serif]">
+                        <div class="lg:w-2/3 mx-auto">
+                            <div>
+                                <label for="email" class="block font-semibold text-[16px] mb-2">Email.</label>
+                                <input type="email" id="email" name="email" placeholder="Superman@gmail.com" required
+                                    class="w-full px-4 py-3 border border-black rounded-lg focus:ring-green-500 focus:border-green-500 text-base shadow-sm placeholder-gray-500 placeholder:text-xl placeholder:font-semibold placeholder:text-gray-500 font-[Montserrat,sans-serif]">
+                            </div>
+
+                            <p for="terms" class="mb-0 mt-4 text-[14px] text-gray-600 cursor-pointer">
+                                By creating an account, you agree to the terms below
+                            </p>
+
+                            <div class="flex items-start mt-6 mb-4">
+                                <input id="terms" type="checkbox" checked
+                                    class="h-5 w-5 mr-4 rounded custom-checkbox cursor-pointer mt-0.5">
+                                <label for="terms" class="ml-3 text-sm text-gray-500 cursor-pointer">
+                                    Agree with our terms & Conditions
+                                </label>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <input id="marketing" type="checkbox" checked
+                                    class="h-5 w-5 mr-4 rounded custom-checkbox cursor-pointer mt-0.5">
+                                <label for="marketing" class="ml-3 text-sm text-gray-500 cursor-pointer">
+                                    You agree to receive marketing email from TheStarterSet.com
+                                </label>
+                            </div>
                         </div>
 
-                        <p for="terms" class="m-0 text-[10px] text-gray-600 text-center cursor-pointer">
-                            By creating an account, you agree to the terms below
-                        </p>
-
-                        <div class="flex items-start mt-6">
-                            <input id="terms" type="checkbox" checked
-                                class="h-5 w-5 mr-4 rounded custom-checkbox cursor-pointer mt-0.5">
-                            <label for="terms" class="ml-3 text-sm  cursor-pointer">
-                                Agree with our terms & Conditions
-                            </label>
-                        </div>
-                        
-                        <div class="flex items-start">
-                            <input id="marketing" type="checkbox" checked
-                                class="h-5 w-5 mr-4 rounded custom-checkbox cursor-pointer mt-0.5">
-                            <label for="marketing" class="ml-3 text-sm  cursor-pointer">
-                                You agree to receive marketing email from TheStarterSet.com
-                            </label>
-                        </div>
-
-                        <div class="pt-4 flex justify-between space-x-4">
+                        <div class="pt-4 flex justify-between lg:gap-x-12 space-x-4">
                             <button type="button"
-                                class="w-full py-1 px-4 rounded-lg btn-purple transition-colors">
+                                class="w-full py-1 hover:bg-purple-300 px-4 rounded-lg btn-purple transition-colors">
                                 Back
                             </button>
                             <button type="submit"
-                                class="w-full py-1 px-4 rounded-lg btn-green transition-colors">
+                                class="w-full py-1 hover:bg-green-400 px-4 rounded-lg btn-green transition-colors">
                                 Create Account
                             </button>
                         </div>
@@ -142,20 +144,18 @@
         </div>
 
         <!-- Footer Component -->
-        <footer id="main-footer" class="bg-gray-50 border-t border-gray-200 mt-auto">
-            <div class="mx-auto px-4 py-6">
+        <footer id="main-footer" class="pl-6 pr-6 pb-6 md:pt-10 md:px-14 bg-white mt-auto">
+            <div class="mx-auto py-6 px-6 bg-gray-50 mt-auto rounded-xl">
                 <!-- Footer Links -->
                 <nav class="flex justify-center space-x-8 mb-4 border-b border-gray-150 pb-4">
-                    <a href="#" class="text-sm text-gray-600 hover: transition-colors font-medium">Sign Up</a>
-                    <a href="#" class="text-sm text-gray-600 hover: transition-colors font-medium">About us</a>
-                    <a href="#" class="text-sm text-gray-600 hover: transition-colors font-medium">Contacts</a>
+                    <a href="#" class="text-sm text-gray-800 hover: transition-colors font-medium">Sign Up</a>
+                    <a href="#" class="text-sm text-gray-800 hover: transition-colors font-medium">About us</a>
+                    <a href="#" class="text-sm text-gray-800 hover: transition-colors font-medium">Contacts</a>
                 </nav>
                 
                 <!-- Contact Email -->
                 <div class="flex items-center justify-center text-sm">
-                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                    </svg>
+                    <img src="./icons/envelope.png" class="mr-2">
                     <a href="mailto:info@Questions.com" class="hover: transition-colors text-black-600 font-semibold">info@Questions.com</a>
                 </div>
             </div>

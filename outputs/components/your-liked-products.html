@@ -65,113 +65,120 @@
         </header>
 
         <div class="w-full bg-white pt-6 pl-6 pr-6 md:pt-10 md:px-14 shadow-lg rounded-xl main-content-height flex justify-center">
-            <div class="max-w-xl">
-                <header class="flex items-center mb-6">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-gray-900" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
-                    </svg>
-                    <h1 class="text-xl font-bold font-[Archivo,sans-serif] font-[20px]">Your Likes</h1>
+            <div class="w-full">
+                <header class="flex items-center mb-6 justify-between">
+                    <div class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 lg:w-14 lg:h-14 mr-3 lg:mr-12 text-gray-900" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                        </svg>
+                        <h1 class="font-bold font-[Archivo,sans-serif] text-[20px] lg:text-[48px] lg:font-medium">Your Likes</h1>
+                    </div>
+
+                    <div class="invisible md:visible flex-col flex justify-center items-center cursor-pointer">
+                        <img class="w-[32px] h-[32px]" src="./icons/filter.svg">
+                        <p class="fs-[20px] text-gray-500">Filter</p>
+                    </div>
                 </header>
 
-                <div class="space-y-8">
+                <div class="space-y-8 lg:space-y-5 lg:w-5/6 mx-auto">
 
                     <div class="flex items-start justify-between">
                         
                         <div class="flex flex-grow items-center">
-                            <div class="w-16 h-16 mr-4 flex-shrink-0">
-                                <img src="./icons/product-1.png">
+                            <div class="w-16 lg:w-[138px] h-16 lg:h-[140px] mr-4 flex-shrink-0">
+                                <img class="w-full" src="./icons/product-1.png">
                             </div>
                             
                             <div class="flex flex-col font-[Archivo,sans-serif]">
-                                <p class="text-base font-semibold text-gray-800 leading-tight font-[16px] mb-3">Baby Bathtub</p>
-                                <p class="text-sm font-semibold text-gray-800 leading-tight font-[12px]">Fisher-Price 4-in-1 Sling 'n Seat Tub</p>
-                                <p class="text-sm text-gray-500 mt-1 font-[12px]">$49.99</p>
+                                <p class="text-base font-semibold text-gray-800 leading-tight text-[16px] lg:text-[32px] mb-3">Baby Bathtub</p>
+                                <p class="text-sm font-semibold text-gray-800 leading-tight text-[12px] lg:text-[20px] lg:font-light mb-3">Fisher-Price 4-in-1 Sling 'n Seat Tub</p>
+                                <p class="text-sm text-gray-500 mt-1 text-[12px] lg:text-[20px] lg:text-gray-300 lg:font-light">$49.99</p>
                             </div>
                         </div>
 
                         <div class="flex flex-col space-y-1">
-                            <button class="text-sm font-semibold w-20 py-1 liked-products-btn flex justify-center items-center mt-1 mb-3 ml-4">Amazon</button>
-                            <button class="text-sm font-semibold w-20 py-1 liked-products-btn flex justify-center items-center ml-4">Target</button>
+                            <button class="text-sm font-semibold w-20 py-1 liked-products-btn flex justify-center items-center mt-1 mb-3 lg:mb-4 ml-4 rounded-[25px] lg:rounded-[10px] h-[20px] lg:h-[60px] w-full lg:w-[325px] lg:font-bold lg:text-[20px]">Amazon</button>
+                            <button class="text-sm font-semibold w-20 py-1 liked-products-btn flex justify-center items-center ml-4 rounded-[25px] lg:rounded-[10px] h-[20px] lg:h-[60px] w-full lg:w-[325px] lg:font-bold lg:text-[20px]">Target</button>
                         </div>
                     </div>
                     
                     <div class="flex items-start justify-between">
                         
                         <div class="flex flex-grow items-center">
-                            <div class="w-16 h-16 mr-4 flex-shrink-0">
-                                <img src="./icons/product-2.png">
+                            <div class="w-16 h-16 lg:w-[138px] h-16 lg:h-[140px] mr-4 flex-shrink-0">
+                                <img class="w-full" src="./icons/product-2.png">
                             </div>
                             
                             <div class="flex flex-col font-[Archivo,sans-serif]">
-                                <p class="text-base font-semibold text-gray-800 leading-tight font-[16px] mb-3">Baby swing</p>
-                                <p class="text-sm font-semibold text-gray-800 leading-tight font-[12px]">Graco Simple Sway Swing</p>
-                                <p class="text-sm text-gray-500 mt-1 font-[12px]">$109.99</p>
+                                <p class="text-base font-semibold text-gray-800 leading-tight text-[16px] lg:text-[32px] mb-3">Baby swing</p>
+                                <p class="text-sm font-semibold text-gray-800 leading-tight text-[12px] lg:text-[20px] lg:font-light mb-3">Graco Simple Sway Swing</p>
+                                <p class="text-sm text-gray-500 mt-1 text-[12px] lg:text-[20px] lg:text-gray-300 lg:font-light">$109.99</p>
                             </div>
                         </div>
 
                         <div class="flex flex-col space-y-1">
-                            <button class="text-sm font-semibold w-20 py-1 liked-products-btn flex justify-center items-center mt-1 mb-3 ml-4">Amazon</button>
-                            <button class="text-sm font-semibold w-20 py-1 liked-products-btn flex justify-center items-center ml-4">Target</button>
+                            <button class="text-sm font-semibold w-20 py-1 liked-products-btn flex justify-center items-center mt-1 mb-3 lg:mb-4 ml-4 rounded-[25px] lg:rounded-[10px] h-[20px] lg:h-[60px] w-full lg:w-[325px] lg:font-bold lg:text-[20px]">Amazon</button>
+                            <button class="text-sm font-semibold w-20 py-1 liked-products-btn flex justify-center items-center ml-4 rounded-[25px] lg:rounded-[10px] h-[20px] lg:h-[60px] w-full lg:w-[325px] lg:font-bold lg:text-[20px]">Target</button>
                         </div>
                     </div>
 
                     <div class="flex items-start justify-between">
                         
                         <div class="flex flex-grow items-center">
-                            <div class="w-16 h-16 mr-4 flex-shrink-0">
-                                <img src="./icons/product-3.png">
+                            <div class="w-16 h-16 lg:w-[138px] h-16 lg:h-[140px] mr-4 flex-shrink-0">
+                                <img class="w-full" src="./icons/product-3.png">
                                 </div>
                             
                             <div class="flex flex-col font-[Archivo,sans-serif]">
-                                <p class="text-base font-semibold text-gray-800 leading-tight font-[16px] mb-3">Crib sheet</p>
-                                <p class="text-sm text-gray-800 font-semibold leading-tight font-[12px]">Burt's Bees Baby Organic Crib Sheet</p>
-                                <p class="text-sm text-gray-500 mt-1 font-[12px]">$19.99</p>
+                                <p class="text-base font-semibold text-gray-800 leading-tight text-[16px] lg:text-[32px] mb-3">Crib sheet</p>
+                                <p class="text-sm font-semibold text-gray-800 leading-tight text-[12px] lg:text-[20px] lg:font-light mb-3">Burt's Bees Baby Organic Crib Sheet</p>
+                                <p class="text-sm text-gray-500 mt-1 text-[12px] lg:text-[20px] lg:text-gray-300 lg:font-light">$19.99</p>
                             </div>
                         </div>
 
                         <div class="flex flex-col space-y-1">
-                            <button class="text-sm font-semibold w-20 py-1 liked-products-btn flex justify-center items-center mt-1 mb-3 ml-4">Amazon</button>
-                            <button class="text-sm font-semibold w-20 py-1 liked-products-btn flex justify-center items-center ml-4">Target</button>
+                            <button class="text-sm font-semibold w-20 py-1 liked-products-btn flex justify-center items-center mt-1 mb-3 lg:mb-4 ml-4 rounded-[25px] lg:rounded-[10px] h-[20px] lg:h-[60px] w-full lg:w-[325px] lg:font-bold lg:text-[20px]">Amazon</button>
+                            <button class="text-sm font-semibold w-20 py-1 liked-products-btn flex justify-center items-center ml-4 rounded-[25px] lg:rounded-[10px] h-[20px] lg:h-[60px] w-full lg:w-[325px] lg:font-bold lg:text-[20px]">Target</button>
                         </div>
                     </div>
 
                     <div class="flex items-start justify-between">
                         <div class="flex flex-grow items-center">
-                            <div class="w-16 h-16 mr-4 flex-shrink-0">
-                                <img src="./icons/product-3.png">
+                            <div class="lg:w-[138px] h-16 lg:h-[140px] w-16 h-16 mr-4 flex-shrink-0">
+                                <img class="w-full" src="./icons/product-3.png">
                             </div>
                             <div class="flex flex-col font-[Archivo,sans-serif]">
-                                <p class="text-base font-semibold text-gray-800 leading-tight font-[16px] mb-3">Crib sheet</p>
-                                <p class="text-sm text-gray-800 font-semibold leading-tight font-[12px]">Burt's Bees Baby Organic Crib Sheet</p>
-                                <p class="text-sm text-gray-500 mt-1 font-[12px]">$19.99</p>
+                                <p class="text-base font-semibold text-gray-800 leading-tight text-[16px] lg:text-[32px] mb-3">Crib sheet</p>
+                                <p class="text-sm font-semibold text-gray-800 leading-tight text-[12px] lg:text-[20px] lg:font-light mb-3">Burt's Bees Baby Organic Crib Sheet</p>
+                                <p class="text-sm text-gray-500 mt-1 text-[12px] lg:text-[20px] lg:text-gray-300 lg:font-light">$19.99</p>
                             </div>
                         </div>
                         <div class="flex flex-col space-y-1">
-                            <button class="text-sm font-semibold w-20 py-1 liked-products-btn flex justify-center items-center mt-1 mb-3 ml-4">Amazon</button>
-                            <button class="text-sm font-semibold w-20 py-1 liked-products-btn flex justify-center items-center ml-4">Target</button>
+                            <button class="text-sm font-semibold w-20 py-1 liked-products-btn flex justify-center items-center mt-1 mb-3 lg:mb-4 ml-4 rounded-[25px] lg:rounded-[10px] h-[20px] lg:h-[60px] w-full lg:w-[325px] lg:font-bold lg:text-[20px]">Amazon</button>
+                            <button class="text-sm font-semibold w-20 py-1 liked-products-btn flex justify-center items-center ml-4 rounded-[25px] lg:rounded-[10px] h-[20px] lg:h-[60px] w-full lg:w-[325px] lg:font-bold lg:text-[20px]">Target</button>
                         </div>
                     </div>
 
                     <div class="flex items-start justify-between">
                         <div class="flex flex-grow items-center">
-                            <div class="w-16 h-16 mr-4 flex-shrink-0">
-                                <img src="./icons/product-3.png">
+                            <div class="w-16 h-16 lg:w-[138px] h-16 lg:h-[140px] mr-4 flex-shrink-0">
+                                <img class="w-full" src="./icons/product-3.png">
                             </div>
                             <div class="flex flex-col font-[Archivo,sans-serif]">
-                                <p class="text-base font-semibold text-gray-800 leading-tight font-[16px] mb-3">Crib sheet</p>
-                                <p class="text-sm text-gray-800 font-semibold leading-tight font-[12px]">Burt's Bees Baby Organic Crib Sheet</p>
-                                <p class="text-sm text-gray-500 mt-1 font-[12px]">$19.99</p>
+                                <p class="text-base font-semibold text-gray-800 leading-tight text-[16px] lg:text-[32px] mb-3">Crib sheet</p>
+                                <p class="text-sm font-semibold text-gray-800 leading-tight text-[12px] lg:text-[20px] lg:font-light mb-3">Burt's Bees Baby Organic Crib Sheet</p>
+                                <p class="text-sm text-gray-500 mt-1 text-[12px] lg:text-[20px] lg:text-gray-300 lg:font-light">$19.99</p>
                             </div>
                         </div>
                         <div class="flex flex-col space-y-1">
-                            <button class="text-sm font-semibold w-20 py-1 liked-products-btn flex justify-center items-center mt-1 mb-3 ml-4">Amazon</button>
-                            <button class="text-sm font-semibold w-20 py-1 liked-products-btn flex justify-center items-center ml-4">Target</button>
+                            <button class="text-sm font-semibold w-20 py-1 liked-products-btn flex justify-center items-center mt-1 mb-3 ml-4 lg:mb-4 rounded-[25px] lg:rounded-[10px] h-[20px] lg:h-[60px] w-full lg:w-[325px] lg:font-bold lg:text-[20px]">Amazon</button>
+                            <button class="text-sm font-semibold w-20 py-1 liked-products-btn flex justify-center items-center ml-4 rounded-[25px] lg:rounded-[10px] h-[20px] lg:h-[60px] w-full lg:w-[325px] lg:font-bold lg:text-[20px]">Target</button>
                         </div>
                     </div>
 
                 </div>
 
-                <div class="mt-8 text-center">
+                <div class="mt-8 mb-4 text-center md:invisible">
                     <button class="text-gray-900 font-semibold text-sm py-2 px-4 underline">
                         Show More Liked Items
                     </button>
@@ -180,20 +187,18 @@
         </div>
 
         <!-- Footer Component -->
-        <footer id="main-footer" class="bg-gray-50 border-t border-gray-200 mt-auto">
-            <div class="mx-auto px-4 py-6">
+        <footer id="main-footer" class="pl-6 pr-6 pb-6 md:pt-10 md:px-14 bg-white mt-auto">
+            <div class="mx-auto py-6 px-6 bg-gray-50 mt-auto rounded-xl">
                 <!-- Footer Links -->
                 <nav class="flex justify-center space-x-8 mb-4 border-b border-gray-150 pb-4">
-                    <a href="#" class="text-sm text-gray-600 hover: transition-colors font-medium">Sign Up</a>
-                    <a href="#" class="text-sm text-gray-600 hover: transition-colors font-medium">About us</a>
-                    <a href="#" class="text-sm text-gray-600 hover: transition-colors font-medium">Contacts</a>
+                    <a href="#" class="text-sm text-gray-800 hover: transition-colors font-medium">Sign Up</a>
+                    <a href="#" class="text-sm text-gray-800 hover: transition-colors font-medium">About us</a>
+                    <a href="#" class="text-sm text-gray-800 hover: transition-colors font-medium">Contacts</a>
                 </nav>
                 
                 <!-- Contact Email -->
                 <div class="flex items-center justify-center text-sm">
-                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                    </svg>
+                    <img src="./icons/envelope.png" class="mr-2">
                     <a href="mailto:info@Questions.com" class="hover: transition-colors text-black-600 font-semibold">info@Questions.com</a>
                 </div>
             </div>

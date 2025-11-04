@@ -65,55 +65,62 @@
             </div>
         </header>
 
-        <div class="w-full bg-white p-6 md:py-10 md:px-14 shadow-lg rounded-xl main-content-height flex justify-center">
+        <div class="w-full bg-white p-6 md:pt-10 md:pb-0 md:px-14 shadow-lg rounded-xl main-content-height flex justify-center">
             <div class="w-full">
                 <div class="w-full bg-white p-8 sm:p-10 space-y-6">
                     <header class="text-center space-y-3">
-                        <h1 class="text-2xl font-bold  mb-4 leading-snug font-[Archivo,sans-serif]">
+                        <h1 class="text-[20px] lg:text-[48px] font-bold lg:font-semibold mb-4 leading-snug font-[Archivo,sans-serif]">
                            Create Account
                         </h1>
                     </header>
                 </div>
 
-                <form class="px-5 space-y-6">
-                    <div>
-                        <label for="username" class="block font-normal text-black text-[16px] mb-1 font-[Poppins,sans-serif]">Username</label>
+                <form class="space-y-6 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-24">
+                    <!-- Left Column -->
+                    <div class="space-y-6">
+                        <div>
+                        <label for="username" class="block font-normal text-black text-[16px] mb-1 font-[Poppins,sans-serif] ">Username</label>
                         <input type="text" id="username" value="Superman2"
                             class="w-full px-4 py-3 border border-black rounded-lg focus:ring-green-500 focus:border-green-500 text-base shadow-sm placeholder-gray-500 placeholder:text-sm placeholder:font-light placeholder:text-black font-[Montserrat,sans-serif]">
-                    </div>
+                        </div>
 
-                    <div>
+                        <div>
                         <label for="email" class="block font-normal text-black text-[16px] mb-1 font-[Poppins,sans-serif]">Email</label>
                         <input type="email" id="email" value="Superman@gmail.com"
                             class="w-full px-4 py-3 border border-black rounded-lg focus:ring-green-500 focus:border-green-500 text-base shadow-sm placeholder-gray-500 placeholder:text-sm placeholder:font-light placeholder:text-black font-[Montserrat,sans-serif]">
-                    </div>
+                        </div>
 
-                    <div>
+                        <div>
                         <label for="phone" class="block font-normal text-black text-[16px] mb-1 font-[Poppins,sans-serif]">Phone Number (Optional)</label>
                         <input type="tel" id="phone" value="(509) 322 - 8916"
                             class="w-full px-4 py-3 border border-black rounded-lg focus:ring-green-500 focus:border-green-500 text-base shadow-sm placeholder-gray-500 placeholder:text-sm placeholder:font-light placeholder:text-black font-[Montserrat,sans-serif]">
+                        </div>
                     </div>
 
-                    <div>
+                    <!-- Right Column -->
+                    <div class="space-y-6">
+                        <div>
                         <label for="password" class="block font-normal text-black text-[16px] mb-1 font-[Poppins,sans-serif]">Password</label>
                         <input type="password" id="password" value="************"
                             class="w-full px-4 py-3 border border-black rounded-lg focus:ring-green-500 focus:border-green-500 text-base shadow-sm placeholder-gray-500 placeholder:text-sm placeholder:font-light placeholder:text-black font-[Montserrat,sans-serif]">
-                    </div>
+                        </div>
 
-                    <div>
+                        <div>
                         <label for="confirm-password" class="block font-normal text-black text-[16px] mb-1 font-[Poppins,sans-serif]">Confirm password</label>
                         <input type="password" id="confirm-password" value="************"
                             class="w-full px-4 py-3 border border-black rounded-lg focus:ring-green-500 focus:border-green-500 text-base shadow-sm placeholder-gray-500 placeholder:text-sm placeholder:font-light placeholder:text-black font-[Montserrat,sans-serif]">
+                        </div>
                     </div>
 
-                    <div class="flex space-x-4 pt-4">
+                    <!-- Buttons (full width below both columns) -->
+                    <div class="flex space-x-4 pt-4 col-span-2 lg:pt-12">
                         <button type="button"
-                                class="w-full py-1 px-4 rounded-lg btn-purple transition-colors">
-                            Back
+                        class="w-full py-1 px-2 rounded-lg btn-purple hover:bg-purple-300 transition-colors">
+                        Back
                         </button>
                         <button type="submit"
-                                class="w-full py-1 px-4 rounded-lg btn-green transition-colors">
-                            Complete Account
+                        class="w-full py-1 px-2 hover:bg-green-400 rounded-lg btn-green transition-colors">
+                        Complete Account
                         </button>
                     </div>
                 </form>
@@ -121,20 +128,18 @@
         </div>
 
         <!-- Footer Component -->
-        <footer id="main-footer" class="bg-gray-50 border-t border-gray-200 mt-auto">
-            <div class="mx-auto px-4 py-6">
+        <footer id="main-footer" class="pl-6 pr-6 pb-6 md:pt-10 md:px-14 bg-white mt-auto">
+            <div class="mx-auto py-6 px-6 bg-gray-50 mt-auto rounded-xl">
                 <!-- Footer Links -->
                 <nav class="flex justify-center space-x-8 mb-4 border-b border-gray-150 pb-4">
-                    <a href="#" class="text-sm text-gray-600 hover: transition-colors font-medium">Sign Up</a>
-                    <a href="#" class="text-sm text-gray-600 hover: transition-colors font-medium">About us</a>
-                    <a href="#" class="text-sm text-gray-600 hover: transition-colors font-medium">Contacts</a>
+                    <a href="#" class="text-sm text-gray-800 hover: transition-colors font-medium">Sign Up</a>
+                    <a href="#" class="text-sm text-gray-800 hover: transition-colors font-medium">About us</a>
+                    <a href="#" class="text-sm text-gray-800 hover: transition-colors font-medium">Contacts</a>
                 </nav>
                 
                 <!-- Contact Email -->
                 <div class="flex items-center justify-center text-sm">
-                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                    </svg>
+                    <img src="./icons/envelope.png" class="mr-2">
                     <a href="mailto:info@Questions.com" class="hover: transition-colors text-black-600 font-semibold">info@Questions.com</a>
                 </div>
             </div>

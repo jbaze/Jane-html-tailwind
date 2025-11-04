@@ -64,13 +64,13 @@
             </div>
         </header>
 
-        <div class="w-full bg-white p-6 md:py-10 md:px-14 shadow-lg rounded-xl main-content-height flex justify-center">
-            <div class="max-w-xl">
+        <div class="w-full bg-white p-6 md:pt-10 md:pb-0 md:px-14 shadow-lg rounded-xl main-content-height flex justify-center">
+            <div class="w-full">
             <header class="text-center mb-8 lg:mb-10">
                 <h1 class="text-[20px] lg:text-[62px] font-bold lg:font-normal tracking-wide font-[Archivo,sans-serif]">Order Confirmation</h1>
             </header>
             
-            <div class="lg:grid lg:grid-cols-2 lg:gap-x-12">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-x-12 lg:text-[24px]">
                 
                 <div id="confirmation-details" class="mb-2 lg:mb-8 lg:mb-0 font-[Montserrat,sans-serif]">
                     
@@ -79,13 +79,13 @@
                             <svg class="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                         </div>
                         
-                        <div class="text-gray-700 text-lg">
+                        <div class="text-gray-800">
                             <p class="text-gray-800">Thank you!</p>
                             <p>Your order #BE12345 has been placed.</p>
                         </div>
                     </div>
-                    <p class="mt-4 text-sm md:text-base">We sent an email to orders@Test.com with your order confirmation and bill.</p>
-                    <p class="text-sm md:text-base">Time placed: 17/02/2020 12:45 CST</p>
+                    <p class="text-gray-800 mt-4 mb-4 lg:mb-8 md:text-base lg:text-[24px] lg:w-2/3 lg:[line-height:1.56]">We sent an email to orders@Test.com with your order confirmation and bill.</p>
+                    <p class="text-gray-800 lg:mb-6 md:text-base lg:text-[24px]">Time placed: 17/02/2020 12:45 CST</p>
 
                     <div class="flex justify-between">
                         <p class="text-gray-800 mb-3 mt-6 lg:hidden">Order Item</p>
@@ -100,14 +100,14 @@
                     
                     <p class="hidden lg:block text-gray-800 mb-3 sm:text-a">Order Item</p>
 
-                    <p class="lg:mt-8 mt-0 mb-4 lg:mb-2 pt-4 text-gray-800 text-center lg:text-left font-bold lg:font-normal text-xl lg:text-base">Order Summary</p>
+                    <p class="mt-8 lg:mt-8 mb-0 flex items-center lg:justify-start justify-center text-gray-800 font-bold lg:font-normal mb-8 lg:mb-2 text-[20px] lg:text-[24px]">Order Summary</p>
 
-                    <div class="flex justify-between items-center text-gray-800 mb-0 lg:mb-6 font-semibold lg:font-normal">
+                    <div class="flex justify-between items-center text-gray-800 mb-0 lg:mb-4 font-semibold lg:font-normal">
                         <p>Baby gear List Qty: 1</p>
                     </div>
 
-                    <div class="space-y-2 pt-4">
-                        <div class="flex justify-between">
+                    <div class="space-y-2 lg:space-y-1 pt-4">
+                        <div class="flex justify-between pb-2">
                             <p class="text-gray-800 font-semibold lg:font-normal">Subtotal</p>
                             <p class="text-gray-800 font-semibold lg:font-normal">$100.00</p>
                         </div>
@@ -116,7 +116,7 @@
                             <p class="text-gray-800 font-semibold lg:font-normal">$8.00</p>
                         </div>
                         
-                        <div class="flex justify-between pt-2">
+                        <div class="flex justify-between pt-1">
                             <p class="text-xl font-bold text-gray-900">Total</p>
                             <p class="text-xl font-bold text-gray-900">$108.00</p>
                         </div>
@@ -126,7 +126,7 @@
             </div>
             
             <div class="mt-0 lg:mt-10 pt-4 flex justify-center">
-                <button class="w-full btn-green py-3 rounded-lg hover:bg-green-300 transition-colors shadow-md lg:w-1/2">
+                <button class="w-full btn-green flex items-center justify-center rounded-lg hover:bg-green-300 transition-colors shadow-md lg:w-1/2">
                     Landing Page
                 </button>
             </div>
@@ -134,24 +134,22 @@
         </div>
 
         <!-- Footer Component -->
-        <footer id="main-footer" class="bg-gray-50 border-t border-gray-200 mt-auto">
-            <div class="mx-auto px-4 py-6">
-                <!-- Footer Links -->
-                <nav class="flex justify-center space-x-8 mb-4 border-b border-gray-150 pb-4">
-                    <a href="#" class="text-sm text-gray-600 hover:text-gray-900 transition-colors font-medium">Sign Up</a>
-                    <a href="#" class="text-sm text-gray-600 hover:text-gray-900 transition-colors font-medium">About us</a>
-                    <a href="#" class="text-sm text-gray-600 hover:text-gray-900 transition-colors font-medium">Contacts</a>
-                </nav>
-                
-                <!-- Contact Email -->
-                <div class="flex items-center justify-center text-sm">
-                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                    </svg>
-                    <a href="mailto:info@Questions.com" class="hover:text-gray-900 transition-colors text-black-600 font-semibold">info@Questions.com</a>
-                </div>
+        <footer id="main-footer" class="pl-6 pr-6 pb-6 md:pt-10 md:px-14 bg-white mt-auto">
+        <div class="mx-auto py-6 px-6 bg-gray-50 mt-auto rounded-xl">
+            <!-- Footer Links -->
+            <nav class="flex justify-center space-x-8 mb-4 border-b border-gray-150 pb-4">
+                <a href="#" class="text-sm text-gray-800 hover: transition-colors font-medium">Sign Up</a>
+                <a href="#" class="text-sm text-gray-800 hover: transition-colors font-medium">About us</a>
+                <a href="#" class="text-sm text-gray-800 hover: transition-colors font-medium">Contacts</a>
+            </nav>
+            
+            <!-- Contact Email -->
+            <div class="flex items-center justify-center text-sm">
+                <img src="./icons/envelope.png" class="mr-2">
+                <a href="mailto:info@Questions.com" class="hover: transition-colors text-black-600 font-semibold">info@Questions.com</a>
             </div>
-        </footer>
+        </div>
+    </footer>
 
         <!-- Optional: Add vanilla JavaScript for interactivity -->
         <script>

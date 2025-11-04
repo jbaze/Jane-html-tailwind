@@ -66,17 +66,17 @@
         </header>
 
         <div class="w-full bg-white p-6 md:py-10 md:px-14 shadow-lg rounded-xl main-content-height flex justify-center">
-            <div class="max-w-xl overflow-hidden">
+            <div class="w-full overflow-hidden">
                 <div class="text-center mb-8">
-                        <h1 class="font-bold mb-4 text-[20px] font-[Archivo,sans-serif]">Your Customized Baby list</h1>
-                        <p class="text-sm text-gray-800 leading-snug text-left font-[Montserrat,sans-serif]">
+                        <h1 class="font-bold mb-4 text-[20px] lg:text-[62px] font-[Archivo,sans-serif]">Your Customized Baby list</h1>
+                        <p class="text-[14px] lg:text-[24px] text-gray-800 leading-snug text-left font-[Montserrat,sans-serif]">
                             Here’s your personalized selection of baby gear, tailored to the preferences and details you shared. Feel free to filter by category or mark items as “Need,” “Don't Need,” or “Maybe.” When you’re ready, simply tap an item to explore where to buy—and enjoy a stress-free, one-click solution for your growing family’s needs.
                         </p>
                     </div>
                     
-                    <div class="flex justify-between items-center mb-8">
+                    <div class="flex justify-between items-center mb-8 lg:mb-0">
                         <div class="flex items-center">
-                            <h2 class="text-lg font-semibold mr-1">You Definitely Need</h2>
+                            <h2 class="text-[20px] lg:text-[32px] font-semibold mr-1">You Definitely Need</h2>
                             <img src="./icons/Vector-down.png">
                         </div>
                         <div class="flex space-x-3 text-gray-800">
@@ -85,17 +85,17 @@
                         </div>
                     </div>
 
-                    <div class="flex overflow-x-auto space-x-12 p-4">
+                    <div class="flex overflow-x-auto space-x-12 p-4 lg:w-full lg:overflow-hidden">
 
                         <div class="flex flex-col space-y-6 flex-shrink-0 w-80">
                             <div class="min-h-[580px]">
                                 <div class="mb-4">
-                                    <span class="text-sm font-medium text-gray-800 pb-1">Bathing</span>
+                                    <span class="text-sm font-medium text-gray-800 pb-1 lg:hidden">Bathing</span>
                                 </div>
 
                                 <div class="relative custom-card-border mb-8 border-x-2 border-transparent rounded-[50px] border-l-[#a0b5a7] border-r-[#a0b5a7] px-6 py-16">
                                     <div class="custom-card-container">
-                                        <h3 class="text-lg font-semibold mb-2">Baby bathtub</h3>
+                                        <h3 class="text-[20px] lg:text-[32px] text-lg font-semibold mb-2 lg:mb-8">Baby bathtub</h3>
                                         <p class="text-sm text-gray-800 leading-relaxed font-[Montserrat,sans-serif] text-[16px]">
                                             We chose the Fisher-Price 4-in-1 Sling 'n Seat Tub for you because it offers a practical and functional design that grows with your baby, aligning with your preference for quality and durability. Its space-saving design and playful elements make it a great fit for your modern and whimsical style, while ensuring safety and comfort for your little one.
                                         </p>
@@ -104,7 +104,7 @@
                                 </div>
                             </div>
 
-                            <div class="rounded-lg p-4">
+                            <div class="rounded-lg p-4 block lg:hidden">
                                 
                                 <div class="text-gray-800 space-x-2 mb-2 text-[16px]">
                                     <span class="font-semibold">Bathing</span>
@@ -139,8 +139,8 @@
                             </div>
                         </div>
 
-                        <div class="flex flex-col space-y-6 flex-shrink-0 w-80">
-                            <div class="rounded-lg p-4">
+                        <div class="flex lg:flex-row flex-col space-y-6 lg:space-y-0 lg:space-x-12 flex-shrink-0 w-80 lg:w-[calc(100%-320px)]">
+                            <div class="rounded-lg p-4 lg:w-80 lg:flex-shrink-0">
                                 
                                 <div class="text-gray-800 space-x-2 mb-2 text-[16px]">
                                     <span class="font-semibold">Bathing</span>
@@ -174,7 +174,143 @@
                                 </button>
                             </div>
 
-                            <div class="rounded-lg p-4">
+                            <div class="rounded-lg p-4 lg:w-80 lg:flex-shrink-0">
+                                <div class="text-gray-800 space-x-2 mb-2 text-[16px]">
+                                    <span class="font-semibold">Bathing</span>
+                                    <span class="font-extrabold text-gray-400">•</span>
+                                    <span>Baby bathtub</span>
+                                </div>
+                                
+                                <div class="relative mb-3">
+                                    <div class="rounded-lg mb-8 h-56 flex items-center justify-center shadow-[-7px_10px_10px_-10px_rgba(0,0,0,0.4)] p-8 bg-white">
+                                        <img src="./icons/product-img.png">
+                                    </div>
+                                    <div class="absolute top-2 right-2 bg-white rounded-full p-1 shadow">
+                                        <img src="./icons/thumbs-up.png">
+                                    </div>
+                                </div>
+
+                                <h4 class="text-base font-semibold mb-1">Fisher-Price 4-in-1 Sling 'n Seat Tub</h4>
+                                <div class="flex items-center mb-2">
+                                    <span class="text-lg font-bold mr-2">$44.99</span>
+                                    <span class="text-sm text-gray-800 mr-2">on Amazon</span>
+                                    <div class="flex text-yellow-500 mr-2">...</div> 
+                                    <span class="text-sm text-gray-800">(28,959)</span>
+                                </div>
+
+                                <p class="text-xs text-gray-600 mb-4 leading-relaxed">
+                                    We chose the Fisher-Price 4-in-1 Sling 'n Seat Tub for you because it offers a practical and functional design that grows with your baby, aligning with your preference for quality and durability. Its space-saving design and playful elements make it a great fit for your modern and whimsical style, while ensuring safety and comfort for your little one.
+                                </p>
+
+                                <button class="w-full text-[16px] py-3 btn-green rounded-md font-semibold text-sm wheretobuy-btn transition duration-150 ease-in-out">
+                                    Where to Buy
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="flex justify-between items-center mb-8 lg:mb-0 mt-8 lg:mt-0 hidden lg:flex">
+                        <div class="flex items-center">
+                            <h2 class="text-[20px] lg:text-[32px] font-semibold mr-1">You Don't Need</h2>
+                            <img src="./icons/Vector-down.png">
+                        </div>
+                        <div class="flex space-x-3 text-gray-800">
+                            <img src="./icons/filter.svg">
+                            <img src="./icons/thumbs-up.png">
+                        </div>
+                    </div>
+
+                    <div class="flex overflow-x-auto space-x-12 p-4 lg:w-full lg:overflow-hidden hidden lg:flex">
+
+                        <div class="flex flex-col space-y-6 flex-shrink-0 w-80">
+                            <div class="min-h-[580px]">
+                                <div class="mb-4">
+                                    <span class="text-sm font-medium text-gray-800 pb-1 lg:hidden">Bathing</span>
+                                </div>
+
+                                <div class="relative custom-card-border mb-8 border-x-2 border-transparent rounded-[50px] border-l-[#c67979] border-r-[#c67979] px-6 py-16">
+                                    <div class="custom-card-container">
+                                        <h3 class="text-[20px] lg:text-[32px] font-semibold mb-2 lg:mb-8">Baby bathtub</h3>
+                                        <p class="text-sm text-gray-800 leading-relaxed font-[Montserrat,sans-serif] text-[16px]">
+                                            We chose the Fisher-Price 4-in-1 Sling 'n Seat Tub for you because it offers a practical and functional design that grows with your baby, aligning with your preference for quality and durability. Its space-saving design and playful elements make it a great fit for your modern and whimsical style, while ensuring safety and comfort for your little one.
+                                        </p>
+                                    </div>
+                                    <div class="absolute right-0 top-0 bottom-0 w-2 rounded-r-2xl bg-gray-100 -z-10"></div>
+                                </div>
+                            </div>
+
+                            <div class="rounded-lg p-4 block lg:hidden">
+                                
+                                <div class="text-gray-800 space-x-2 mb-2 text-[16px]">
+                                    <span class="font-semibold">Bathing</span>
+                                    <span class="font-extrabold text-gray-400">•</span>
+                                    <span>Baby bathtub</span>
+                                </div>
+                                
+                                <div class="relative mb-3">
+                                    <div class="rounded-lg mb-8 h-56 flex items-center justify-center shadow-[-7px_10px_10px_-10px_rgba(0,0,0,0.4)] p-8 bg-white">
+                                        <img src="./icons/product-img.png">
+                                    </div>
+                                    <div class="absolute top-2 right-2 bg-white rounded-full p-1 shadow">
+                                        <img src="./icons/thumbs-up.png">
+                                    </div>
+                                </div>
+
+                                <h4 class="text-base font-semibold mb-1">Fisher-Price 4-in-1 Sling 'n Seat Tub</h4>
+                                <div class="flex items-center mb-2">
+                                    <span class="text-lg font-bold mr-2">$44.99</span>
+                                    <span class="text-sm text-gray-800 mr-2">on Amazon</span>
+                                    <div class="flex text-yellow-500 mr-2">...</div> 
+                                    <span class="text-sm text-gray-800">(28,959)</span>
+                                </div>
+
+                                <p class="text-xs text-gray-600 mb-4 leading-relaxed">
+                                    We chose the Fisher-Price 4-in-1 Sling 'n Seat Tub for you because it offers a practical and functional design that grows with your baby, aligning with your preference for quality and durability. Its space-saving design and playful elements make it a great fit for your modern and whimsical style, while ensuring safety and comfort for your little one.
+                                </p>
+
+                                <button class="w-full text-[16px] py-3 btn-green rounded-md font-semibold text-sm wheretobuy-btn transition duration-150 ease-in-out">
+                                    Where to Buy
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="flex lg:flex-row flex-col space-y-6 lg:space-y-0 lg:space-x-12 flex-shrink-0 w-80 lg:w-[calc(100%-320px)]">
+                            <div class="rounded-lg p-4 lg:w-80 lg:flex-shrink-0">
+                                
+                                <div class="text-gray-800 space-x-2 mb-2 text-[16px]">
+                                    <span class="font-semibold">Bathing</span>
+                                    <span class="font-extrabold text-gray-400">•</span>
+                                    <span>Baby bathtub</span>
+                                </div>
+                                
+                                <div class="relative mb-3">
+                                    <div class="rounded-lg mb-8 h-56 flex items-center justify-center shadow-[-7px_10px_10px_-10px_rgba(0,0,0,0.4)] p-8 bg-white">
+                                        <img src="./icons/product-img.png">
+                                    </div>
+                                    <div class="absolute top-2 right-2 bg-white rounded-full p-1 shadow">
+                                        <img src="./icons/thumbs-up.png">
+                                    </div>
+                                </div>
+
+                                <h4 class="text-base font-semibold mb-1">Fisher-Price 4-in-1 Sling 'n Seat Tub</h4>
+                                <div class="flex items-center mb-2">
+                                    <span class="text-lg font-bold mr-2">$44.99</span>
+                                    <span class="text-sm text-gray-800 mr-2">on Amazon</span>
+                                    <div class="flex text-yellow-500 mr-2">...</div> 
+                                    <span class="text-sm text-gray-800">(28,959)</span>
+                                </div>
+
+                                <p class="text-xs text-gray-600 mb-4 leading-relaxed">
+                                    We chose the Fisher-Price 4-in-1 Sling 'n Seat Tub for you because it offers a practical and functional design that grows with your baby, aligning with your preference for quality and durability. Its space-saving design and playful elements make it a great fit for your modern and whimsical style, while ensuring safety and comfort for your little one.
+                                </p>
+
+                                <button class="w-full text-[16px] py-3 btn-green rounded-md font-semibold text-sm wheretobuy-btn transition duration-150 ease-in-out">
+                                    Where to Buy
+                                </button>
+                            </div>
+
+                            <div class="rounded-lg p-4 lg:w-80 lg:flex-shrink-0">
                                 <div class="text-gray-800 space-x-2 mb-2 text-[16px]">
                                     <span class="font-semibold">Bathing</span>
                                     <span class="font-extrabold text-gray-400">•</span>
@@ -225,20 +361,18 @@
         </div>
 
         <!-- Footer Component -->
-        <footer id="main-footer" class="bg-gray-50 border-t border-gray-200 mt-auto">
-            <div class="mx-auto px-4 py-6">
+        <footer id="main-footer" class="pl-6 pr-6 pb-6 md:pt-10 md:px-14 bg-white mt-auto">
+            <div class="mx-auto py-6 px-6 bg-gray-50 mt-auto rounded-xl">
                 <!-- Footer Links -->
                 <nav class="flex justify-center space-x-8 mb-4 border-b border-gray-150 pb-4">
-                    <a href="#" class="text-sm text-gray-600 hover: transition-colors font-medium">Sign Up</a>
-                    <a href="#" class="text-sm text-gray-600 hover: transition-colors font-medium">About us</a>
-                    <a href="#" class="text-sm text-gray-600 hover: transition-colors font-medium">Contacts</a>
+                    <a href="#" class="text-sm text-gray-800 hover: transition-colors font-medium">Sign Up</a>
+                    <a href="#" class="text-sm text-gray-800 hover: transition-colors font-medium">About us</a>
+                    <a href="#" class="text-sm text-gray-800 hover: transition-colors font-medium">Contacts</a>
                 </nav>
                 
                 <!-- Contact Email -->
                 <div class="flex items-center justify-center text-sm">
-                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                    </svg>
+                    <img src="./icons/envelope.png" class="mr-2">
                     <a href="mailto:info@Questions.com" class="hover: transition-colors text-black-600 font-semibold">info@Questions.com</a>
                 </div>
             </div>
